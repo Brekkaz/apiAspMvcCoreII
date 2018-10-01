@@ -5,11 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20180928031445_Initial_Migration.cs" />
+    <Compile Remove="Migrations\20180928031445_Initial_Migration.Designer.cs" />
+    <Compile Remove="Migrations\20181001022954_test.cs" />
+    <Compile Remove="Migrations\20181001022954_test.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
